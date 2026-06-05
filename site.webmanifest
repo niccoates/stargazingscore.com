@@ -1,0 +1,18 @@
+{
+  "name": "Stargazing Score",
+  "short_name": "Stargazing",
+  "description": "Check tonight's stargazing conditions for any UK postcode.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070b18",
+  "theme_color": "#070b18",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Stargazing Score</title>
+  <desc id="desc">A deep night sky preview for Stargazing Score, a UK stargazing forecast utility.</desc>
+  <defs>
+    <radialGradient id="sky-a" cx="25%" cy="20%" r="65%">
+      <stop offset="0" stop-color="#182542"/>
+      <stop offset="1" stop-color="#070b18"/>
+    </radialGradient>
+    <radialGradient id="sky-b" cx="82%" cy="18%" r="55%">
+      <stop offset="0" stop-color="#211a3f" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#070b18" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logo-star" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8d8"/>
+      <stop offset=".72" stop-color="#ffc76a"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="1" stop-color="#9fd4ff"/>
+    </linearGradient>
+    <symbol id="star-mark" viewBox="0 0 100 100">
+      <polygon points="50 0 59 38 100 50 59 62 50 100 41 62 0 50 41 38"/>
+      <circle cx="50" cy="50" r="9"/>
+    </symbol>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky-a)"/>
+  <rect width="1200" height="630" fill="url(#sky-b)"/>
+  <g fill="#eef4ff" opacity=".55">
+    <circle cx="106" cy="102" r="3"/>
+    <circle cx="242" cy="510" r="2"/>
+    <circle cx="870" cy="106" r="2"/>
+    <circle cx="1038" cy="356" r="3"/>
+    <circle cx="640" cy="530" r="2"/>
+    <circle cx="1128" cy="96" r="2"/>
+  </g>
+  <g fill="url(#logo-star)">
+    <use href="#star-mark" x="104" y="214" width="118" height="118"/>
+    <use href="#star-mark" x="224" y="190" width="68" height="68"/>
+    <use href="#star-mark" x="244" y="298" width="54" height="54"/>
+  </g>
+  <g fill="#fff8d8">
+    <circle cx="163" cy="273" r="10"/>
+    <circle cx="258" cy="224" r="6"/>
+    <circle cx="271" cy="325" r="5"/>
+  </g>
+  <text x="350" y="280" fill="url(#text)" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="76" font-weight="650">Stargazing Score</text>
+  <text x="354" y="354" fill="#9aa8c7" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32">Tonight's UK stargazing forecast</text>
+  <g transform="translate(354 412)" fill="url(#logo-star)" opacity=".95">
+    <use href="#star-mark" x="0" y="0" width="42" height="42"/>
+    <use href="#star-mark" x="58" y="0" width="42" height="42"/>
+    <use href="#star-mark" x="116" y="0" width="42" height="42"/>
+    <use href="#star-mark" x="174" y="0" width="42" height="42"/>
+    <use href="#star-mark" x="232" y="0" width="42" height="42"/>
+  </g>
+</svg>

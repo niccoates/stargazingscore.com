@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Stargazing Score | Tonight's UK Stargazing Forecast</title>
+        <meta
+            name="description"
+            content="Check tonight's stargazing conditions for any UK postcode with a simple score, star rating, sky outlook and moon phase."
+        />
+        <meta
+            name="keywords"
+            content="stargazing forecast, UK stargazing, astronomy forecast, night sky forecast, cloud cover, moon phase, stargazing conditions"
+        />
+        <meta name="author" content="Nic Coates" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#070b18" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="application-name" content="Stargazing Score" />
+        <meta name="apple-mobile-web-app-title" content="Stargazing Score" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="canonical" href="https://www.stargazingscore.com/" />
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+        <link rel="mask-icon" href="/images//favicon.svg" color="#9fd4ff" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Stargazing Score" />
+        <meta property="og:url" content="https://www.stargazingscore.com/" />
+        <meta property="og:title" content="Stargazing Score" />
+        <meta
+            property="og:description"
+            content="Check tonight's stargazing conditions for any UK postcode with a simple score, star rating, sky outlook and moon phase."
+        />
+        <meta
+            property="og:image"
+            content="https://www.stargazingscore.com/og-image.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Stargazing Score astronomy forecast preview"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@soloandwild" />
+        <meta name="twitter:creator" content="@soloandwild" />
+        <meta name="twitter:title" content="Stargazing Score" />
+        <meta
+            name="twitter:description"
+            content="Check tonight's stargazing conditions for any UK postcode."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.stargazingscore.com/og-image.png"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Stargazing Score astronomy forecast preview"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Stargazing Score",
+                "url": "https://www.stargazingscore.com/",
+                "description": "Check tonight's stargazing conditions for any UK postcode with a simple score, star rating, sky outlook and moon phase.",
+                "applicationCategory": "WeatherApplication",
+                "operatingSystem": "Any",
+                "creator": {
+                    "@type": "Person",
+                    "name": "Nic Coates",
+                    "sameAs": "https://x.com/soloandwild"
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="/stylesheets/styles.css" />
+    </head>
+    <body>
+        <div class="sky-field" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <main class="page-shell">
+            <header class="site-header" aria-labelledby="page-title">
+                <h1 id="page-title" aria-label="Stargazing Score">
+                    <svg
+                        class="site-logo"
+                        viewBox="0 0 760 112"
+                        role="img"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <defs>
+                            <linearGradient
+                                id="logo-star-fill"
+                                x1="0"
+                                y1="0"
+                                x2="1"
+                                y2="1"
+                            >
+                                <stop offset="0" stop-color="#fff8d8"></stop>
+                                <stop offset="0.72" stop-color="#ffc76a"></stop>
+                            </linearGradient>
+                            <linearGradient
+                                id="logo-text-fill"
+                                x1="0"
+                                y1="0"
+                                x2="1"
+                                y2="1"
+                            >
+                                <stop offset="0" stop-color="#eef4ff"></stop>
+                                <stop offset="1" stop-color="#9fd4ff"></stop>
+                            </linearGradient>
+                            <symbol id="logo-star" viewBox="0 0 100 100">
+                                <polygon
+                                    points="50 0 59 38 100 50 59 62 50 100 41 62 0 50 41 38"
+                                ></polygon>
+                                <circle cx="50" cy="50" r="9"></circle>
+                            </symbol>
+                        </defs>
+                        <g class="logo-mark">
+                            <use
+                                href="#logo-star"
+                                x="18"
+                                y="31"
+                                width="50"
+                                height="50"
+                            ></use>
+                            <use
+                                href="#logo-star"
+                                x="70"
+                                y="22"
+                                width="28"
+                                height="28"
+                            ></use>
+                            <use
+                                href="#logo-star"
+                                x="76"
+                                y="68"
+                                width="22"
+                                height="22"
+                            ></use>
+                        </g>
+                        <text class="logo-word" x="124" y="70">
+                            Stargazing Score
+                        </text>
+                    </svg>
+                </h1>
+                <p>
+                    Check tonight's stargazing conditions for any UK postcode.
+                </p>
+            </header>
+
+            <section
+                id="search-panel"
+                class="search-panel"
+                aria-labelledby="search-title"
+            >
+                <h2 id="search-title">Tonight's sky</h2>
+                <form id="postcode-form" class="search-form" novalidate>
+                    <label for="postcode">UK postcode</label>
+                    <input
+                        id="postcode"
+                        name="postcode"
+                        type="text"
+                        inputmode="text"
+                        autocomplete="postal-code"
+                        placeholder="AB12 3CD"
+                        aria-describedby="message"
+                        required
+                    />
+                    <button id="submit-button" type="submit">
+                        Check Tonight
+                    </button>
+                </form>
+                <p
+                    id="message"
+                    class="message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </section>
+
+            <section
+                id="forecast-shell"
+                class="forecast-shell"
+                aria-live="polite"
+                hidden
+            >
+                <p class="forecast-location">
+                    Forecast for <strong id="location"></strong>
+                </p>
+
+                <section id="result" class="result" aria-live="polite" hidden>
+                    <div class="planet-score" aria-hidden="true">
+                        <div id="score-planet" class="score-planet">
+                            <span class="planet-surface"></span>
+                        </div>
+                    </div>
+
+                    <div class="result-copy">
+                        <p class="result-label">Tonight's forecast</p>
+                        <div
+                            id="stars"
+                            class="stars"
+                            aria-label="Star rating"
+                        ></div>
+                        <p id="summary" class="summary"></p>
+                        <p class="score-line">
+                            <strong id="score"></strong> <span>/ 100</span>
+                        </p>
+                    </div>
+
+                    <section class="moon-panel" aria-labelledby="moon-title">
+                        <div
+                            id="moon-icon"
+                            class="moon-icon"
+                            aria-hidden="true"
+                        ></div>
+                        <div>
+                            <h2 id="moon-title">Moon Phase</h2>
+                            <p id="moon-phase"></p>
+                        </div>
+                    </section>
+
+                    <section class="outlook" aria-labelledby="outlook-title">
+                        <h2 id="outlook-title">Tonight's outlook</h2>
+                        <p id="forecast-commentary"></p>
+                    </section>
+                </section>
+
+                <button
+                    id="change-location"
+                    class="change-location"
+                    type="button"
+                >
+                    Change location
+                </button>
+                <button id="share-forecast" class="share-forecast" type="button">
+                    Share forecast
+                </button>
+                <p
+                    id="share-message"
+                    class="share-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </section>
+
+            <footer class="site-footer">
+                <p>
+                    Weather data provided by Open-Meteo · Postcode lookup by
+                    Postcodes.io
+                </p>
+                <p>Made by <a href="https://www.niccoates.uk">Nic Coates</a></p>
+            </footer>
+        </main>
+
+        <script src="/javascripts/app.js"></script>
+    </body>
+</html>
