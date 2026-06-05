@@ -71,7 +71,7 @@ Deploy the repository to a static host such as Cloudflare Pages.
 Cloudflare Pages uses `_redirects` so path-based forecast URLs work on direct navigation:
 
 ```txt
-/* /index.html 200
+/:postcode / 200
 ```
 
 ## Notes
